@@ -1,0 +1,157 @@
+.stream {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 80px;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.controls {
+  background: rgba(253, 126, 20, 1);
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+
+.controls::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50vh;
+}
+
+.arrow_left {
+  left: 100px;
+}
+
+.arrow_right {
+  right: 100px;
+}
+
+.arrow svg path {
+  fill: rgba(253, 126, 20, 0.4)
+}
+
+.arrow:hover path {
+  fill: rgba(253, 126, 20, 0.8)
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  height: 100%;
+  color: rgba(242, 242, 242, 1);
+}
+
+.footer * {
+  align-self: center;
+}
+
+.footer:last-child {
+  justify-self: end;
+}
+
+.footer:first-child {
+  margin-left: calc(50vw - 200px);
+}
+
+.footer span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.operator {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: solid rgba(242, 242, 242, 0.8)  2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operator svg {
+  padding-top: 2px;
+}
+
+.operator path {
+  fill: rgba(242, 242, 242, 0.8);
+}
+
+.operator:hover {
+  border-color: rgba(242, 242, 242, 1);
+}
+
+.operator:hover path,
+.features:hover path {
+  fill: rgba(242, 242, 242, 1);
+}
+
+.footer span {
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
+}
+
+.features {
+  width: 160px;
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.features path {
+  fill: rgba(242, 242, 242, 1);
+}
+
+
+.features button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.features button:hover::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transpartent;
+  border-top: 22px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -11px;
+  left: 14px;
+  transform: rotate(135deg);
+}
+
+.features button:hover::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transpartent;
+  border-top: 20px solid rgba(242, 242, 242, 1);
+  position: absolute;
+  top: -11px;
+  left: 17px;
+  transform: rotate(135deg);
+}

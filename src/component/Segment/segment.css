@@ -1,0 +1,8 @@
+.segment {
+  width: 1000px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

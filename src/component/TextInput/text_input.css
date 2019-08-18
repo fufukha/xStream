@@ -1,0 +1,11 @@
+textarea {
+  outline: none;
+  resize: none;
+  background: transparent;
+  border: none;
+  width: 80%;
+  font-size: 2em;
+  font-family: inherit;
+  text-align: center;
+  padding: 20px;
+}
